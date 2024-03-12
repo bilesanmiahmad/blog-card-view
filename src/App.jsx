@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import avatar from './assets/image-avatar.webp'
 import bgImage from './assets/illustration-article.svg'
 import './App.css'
@@ -10,7 +8,7 @@ function App() {
 
   return (
     <div className="mx-auto bg-white rounded-lg p-5 my-80 md:w-2/5 lg:w-1/3">
-      <section className='bg-cover w-full h-32' style={{backgroundImage: `url(${bgImage})`}}>
+      <section className='bg-cover w-full h-32 md:h-52 lg:h-52' style={{backgroundImage: `url(${bgImage})`}}>
       </section>
       <section >
         <div className='flex'>
@@ -20,7 +18,7 @@ function App() {
           <p className='font-figtree text-left'>Published 21 Dec 2023</p>
         </div>
         <div className=''>
-          <p className='font-figtree text-lg font-extrabold text-left'>HTML & CSS foundations</p>
+          <p className='font-figtree text-lg font-extrabold text-left hover:text-yellow-300 hover:cursor-pointer'>HTML & CSS foundations</p>
         </div>
         <div className=''>
           <p className='font-figtree text-left text-sm font-thin text-gray-500'>These languages are the backbone of every website defining structure, content and presentation.</p>
